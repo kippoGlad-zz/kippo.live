@@ -1,0 +1,9 @@
+.container {
+    text-align: center;
+    font-size: 500%;
+    font-weight: 300;
+    height: 200vh;
+    margin-top: 200px;
+    transition: 0.5s;
+    color: rgb(243, 244, 249);
+}

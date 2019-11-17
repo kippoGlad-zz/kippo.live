@@ -1,0 +1,91 @@
+body { 
+    margin: 0;
+    padding: 0;
+    font-family: "SF Display";
+    background-color: rgb(243, 244, 249);
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+#intro {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+}
+#intro video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+}
+.navbar {
+    position: sticky;
+    background-color: white;
+    top: 0;
+    width: 100vw;
+    height: 60px;
+    box-shadow: 0 4px 5px -2px rgb(227, 227, 227);
+    z-index: 10;
+    transition: top 0.5s;
+}
+#content_inside_navbar {
+    position: relative;
+    width: 71%;
+    height: 100%;
+    left: 50%;
+    top: 20%;
+    height: 80%;
+    transform: translateX(-50%);
+}
+.main_content {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70vw;
+    height: 10000px;
+}
+#left_content {
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    text-align: left;
+}
+#left_content a {
+    text-decoration: none;
+    font-family: "SF Display";
+    font-size: 200%;
+    color: rgb(41, 41, 41);
+    font-weight: bolder;
+}
+#left_content img {
+    height: 70%;
+}
+#left_content span {
+    position: relative;
+    top: -5px;
+    left: 5px;
+}
+#right_content {
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    text-align: right;
+}
+#right_content img {
+    width: 25px;
+    color: white;
+}
+#right_content a {
+    font-weight: 300;
+    font-size: 120%;
+    position: relative;
+    top: -9px;
+    padding: 7px 10px;
+    color: white;
+    border-radius: 10px;
+    background-image: linear-gradient(#00E3D1, #00C8A9);
+    text-decoration: none;
+}
+#paralax1 {
+    width: 100vw;
+}
