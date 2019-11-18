@@ -1,9 +1,19 @@
-.container {
-    text-align: center;
-    font-size: 500%;
-    font-weight: 300;
-    height: 200vh;
-    margin-top: 200px;
-    transition: 0.5s;
-    color: rgb(243, 244, 249);
+.grid {
+    margin-top: 30px;
+    position: relative;
+    left: 15vw;
+    display: grid;
+    grid-template-columns: 35vw 35vw;
+}
+.item {
+    padding: 10px;
+}
+.item1 {
+    color: rgb(52, 52, 52);
+    font-size: 2vw;
+}
+.item3 {
+    font-size: 175%;
+    color: rgb(52, 52, 52);
+    position: relative;
 }

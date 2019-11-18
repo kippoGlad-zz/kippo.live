@@ -89,3 +89,48 @@ body {
 #paralax1 {
     width: 100vw;
 }
+.hot_pick {
+    display: block;
+    background-image: linear-gradient(to left, rgb(255, 185, 98),rgb(255, 140, 0));
+    width: 70vw;
+    margin: 20px 14.5vw 0 14.5vw;
+    padding: 0.5vw;
+    border-radius: 10px;
+    text-align: center;
+    font-size: calc(14px + 0.2vw);
+    font-weight: 800;
+    text-decoration: none;
+    color: white;
+}
+@keyframes wave {
+    from {
+        transform: rotate(40deg);
+    }
+    to {
+        transform: rotate(10deg);
+    }
+}
+#wave {
+    font-size: 150%;
+    display: inline-block;
+    animation-name: wave;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-direction: alternate-reverse;
+}
+#nickname {
+    font-size: 150%;
+    color: black;
+}
+#frontend {
+    color: black;
+    font-size: 110%;
+    font-weight: 600;
+}
+#javascript {
+    color: #F0DB4F;
+    font-weight: 600;
+    background-color: rgb(255, 255, 255);
+    padding: 4px;
+    border-radius: 10px;
+}
