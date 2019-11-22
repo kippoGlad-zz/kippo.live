@@ -13,16 +13,37 @@ function sleep(ms) {
 	return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-async function soon() {
-    for ( var i = 0; i < 1000; i++ ) {
-        for ( var j = 1; j < 8; j++ ) {
-            document.querySelector('#letter' + j).style.color = "black";
-            await sleep(100);
-            document.querySelector('#letter' + j).style.color = "rgb(243, 244, 249)";
-        }
-    }
-}
-soon();
+const spellingPlace = document.querySelector("#programming");
+var txt = ["JavaScript...", "Ruby on Rails...", "Node.js...", "MongoDB...", "React.js...", "Electron...", "and other modern languages..."];
+var temporaryText = "";
+var j = -1;
+var i = 0;
 
-var image = document.getElementsByClassName('thumbnail');
-new simpleParallax(image);
+async function spelling() {
+  j++;
+  if ( j == 6 ) {
+    j = 0;
+  }
+  await sleep(250);
+  for (i = 0 ; i < txt[j].length; i++ ) {
+    temporaryText += txt[j].charAt(i);
+    spellingPlace.innerHTML = temporaryText;
+    await sleep(150);
+  }
+  await sleep(700);
+  deleteLetters();
+}
+
+async function deleteLetters() {
+  for ( i = 0; i < txt[j].length; i++) {
+    temporaryText = temporaryText.slice(0, -1); 
+    spellingPlace.innerHTML = temporaryText;
+    await sleep(75);
+  }
+  spelling();
+}
+spelling();
+
+function basicPopup(url) {
+  popupWindow = window.open(url,'popUpWindow','height=500,width=500,left=100,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes');
+    }

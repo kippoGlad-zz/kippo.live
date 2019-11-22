@@ -1,0 +1,30 @@
+@media only screen and (max-width: 1024px) {
+    .margin1, .margin2, .margin3, .margin4, .margin5 {
+        display: none;
+    } 
+    .grid {
+        margin-top: 20px;
+        position: relative;
+        left: 4vw;
+        display: grid;
+        grid-template-columns: 92vw;
+    }
+    .item1 {
+        font-size: 120%;
+    }
+    #intro video {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 150vw;
+    }
+    #content_inside_navbar {
+        width: 90%;
+    }
+    #wave {
+        font-size: 110%;
+    }
+    #nickname {
+        font-size: 120%;
+    }
+}

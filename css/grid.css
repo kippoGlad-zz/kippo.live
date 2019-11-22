@@ -1,19 +1,21 @@
 .grid {
     margin-top: 30px;
     position: relative;
-    left: 15vw;
     display: grid;
-    grid-template-columns: 35vw 35vw;
+    grid-template-columns: 15vw 35vw 35vw 15vw;
 }
 .item {
-    padding: 10px;
+    padding: 20px;
+    background-color: white;
+    margin: 10px;
 }
 .item1 {
-    color: rgb(52, 52, 52);
-    font-size: 2vw;
+    color: rgb(72, 72, 74);
+    font-size: 225%;
+    text-align: left;
 }
 .item3 {
-    font-size: 175%;
-    color: rgb(52, 52, 52);
+    font-size: 1.5vw;
+    color: rgb(72, 72, 74);
     position: relative;
 }
